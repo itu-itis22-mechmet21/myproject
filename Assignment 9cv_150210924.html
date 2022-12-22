@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0103)file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link href="./Assignment 9cv_150210924_files/rules.css" rel="stylesheet">
+	<title>My CV</title>
+</head> 
+<body>
+	<div class="mywidth">
+		<a href="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html#personal-information" class="mybutton">Personal Information</a> -
+		<a href="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html#education" class="mybutton">Education</a> -
+		<a href="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html#skills" class="mybutton">Skills</a> -
+		<a href="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html#languages" class="mybutton">Languages</a> -
+		<a href="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/Assigment%209cv.html#hobbies" class="mybutton">Hobbies</a>
+		<div> 
+			<h1 id="name-surname">Beiza Mechmet's Resume</h1>
+			<h3><p>Student</p></h3> 
+				<img src="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/itu-logo.png" id="logo" class="itu-logo" alt="image" width="100">
+				<img src="file:///C:/Users/Beyza/AppData/Local/Temp/Rar$EXa33840.23523/22.12.2022/14.12.2022/image.jpg" alt="image" width="100">
+				<h2 id="personal-information">Personal Information</h2>
+				<b>Address:</b> Ayazağa, Istanbul<br>
+				<b>Contact Number:</b> (+90) 552 650 69 91<br>
+				<b>Email:</b> mechmet21@itu.edu.tr<br>
+				<b>GitHub:</b> <a href="https://github.com/itu-itis22-mechmet21" class="github-link">https://github.com/itu-itis22-mechmet21</a>
+				<div>
+					<h2 onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" onclick="addText(this)" id="education">Education</h2>
+				</div>
+				<table>
+					<tbody><tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>School</b></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Department</b></td>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Year</b></td>
+					</tr>
+					<tr>
+						<td>Istanbul Technical University</td>
+						<td>Computer Engineering</td>
+						<td>2022-present(2026 estimated)</td>
+					</tr>
+				</tbody></table>
+				<div>
+					<h2 onclick="favCourse(this)">Courses that I am taking</h2>
+					<ol>
+						<li>BLG 101E - Introduction to Information Systems</li>
+						<li>FIZ 101E - Physics 1</li>
+						<li>MAT 281E - Linear Algebra and Applications</li>
+						<li>BLG 113E - Intr.toComp.Eng.and Ethics</li>
+						<li>MAT 103E - Mathematics I</li>
+					</ol>
+					<p id="fav-course"></p> 
+				</div>
+				<h2 id="skills">Skills</h2>
+				<ul>
+					<li id="changecolor" onmouseenter="changeBackgroudColor(this)" onmouseout="changeBackgroudColorReverse(this)" style="background-color: white;">HTML</li>
+					<li id="changecolor" onmouseenter="changeBackgroudColor(this)" onmouseout="changeBackgroudColorReverse(this)">CSS</li>
+					<li id="changecolor" onmouseenter="changeBackgroudColor(this)" onmouseout="changeBackgroudColorReverse(this)">Javascript</li>
+				</ul>
+				<h2 id="languages">Languages</h2>
+
+				<ul>
+					<li id="changecolor" onmouseenter="changeBackgroudColor(this)" onmouseout="changeBackgroudColorRevers(this)">Turkish</li>
+					<li id="changecolor" onmouseenter="changeBackgroudColor(this)" onmouseout="changeBackgroudColorRevers(this)">English</li>
+				</ul>
+				<h2 id="hobbies">Hobbies</h2>
+				<ul>
+					<li>Traveling</li>
+					<li>Coding</li>
+				</ul>
+			</div>
+		</div> 
+	
+	<script>
+		document.ready(alert('Are you ready to see my resume?'));
+		function mouseOver(element)
+		{
+			element.style.color = 'blue';
+			document.getElementById("education").style.fontFamily = "Bradley Hand";
+		}
+		function mouseOut(element)
+		{
+			element.style.color = 'blue';
+			document.getElementById("education").style.fontFamily = "Thoma";
+		}
+		function favCourse(element)
+		{
+			element.style.color = 'blue';
+			document.getElementById("fav-course").innerHTML= "My favorite course is BLG 101E - Introduction to Information Systems";
+		}
+		function changeBackgroudColor(element){
+			document.getElementById("changecolor").style.backgroundColor = "lightblue";
+		}
+		function changeBackgroudColorReverse(element){
+			document.getElementById("changecolor").style.backgroundColor = "white";
+		}
+		function changeBackgroudColorReverse(element){
+			document.getElementById("changecolor").style.backgroundColor = "white";
+		}
+		function addText(element){
+			document.getElementById("education").innerHTML+= " from anchors";
+		}
+	</script>
+	</body></html>
