@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form</title>
+	<style type="text/css">
+		div{margin:2px;}
+		#fieldsetPersonalInfo{background-color: lightblue;}
+		#fieldsetCourseInfo{background-color: lightgreen;}
+	</style>
+</head>
+<body>
+	<h2>Course Application Form</h2>
+	<form>
+		<fieldset id="fieldsetPersonalInfo">
+			<p>Personal Informations</p>
+			<div>
+				<label>Name:</label>
+				<input type="text" name="name" placeholder="Your Name">
+				<label>Surname:</label>
+				<input type="text" name="surname" placeholder="Your Surname">
+			</div>
+			<div>
+				<label>Age:</label>
+				<input type="number" name="age" value="19">
+			</div>
+			<div>
+				<label>E-Mail:</label>
+				<input type="email" name="email" placeholder="Your E-mail">
+			</div>
+			<div>
+				<label>Birthdate:</label>
+				<input type="date" name="birthdate">
+			</div>
+			<div>
+				<label>CV File:</label>
+				<input type="file" name="cvFile">
+			</div>
+		</fieldset>
+		<fieldset id="fieldsetCourseInfo">
+			<p>Course Information</p>
+			<div>
+				<label>Course:</label>
+				<select name="course">
+					<option>Machine Learning</option>
+					<option>Deep Learning</option>
+					<option>Robotics</option>
+				</select>
+			</div>
+			<label>Season:</label>
+			<div>
+				<input type="radio" name="autumn" value="Autumn">
+				<label>Autumn</label>
+			</div>
+			<div>
+				<input type="radio" name="spring" value="Spring">
+				<label>Spring</label>
+			</div>
+			<div>
+				<input type="radio" name="summer" value="Summer">
+				<label>Summer</label>
+			</div>
+
+			<label>Time:</label>
+			<div id="dayWeekdayEvening">
+				<input type="checkbox" name="selectedWeekdayEvening" value="Autumn">
+				<label>Weekday Evening</label>
+			</div>
+			<div>
+				<input type="checkbox" name="selectedWeekdayEvening" value="Spring">
+				<label>Weekday Morning</label>
+			</div>
+			<div>
+				<input type="checkbox" name="selectedWeekdayEvening" value="Summer">
+				<label>Weekend Evening</label>
+			</div>
+		</fieldset>
+		<input type="reset" name="" value="Reset">
+		<input type="submit" name="" value="Submit">
+	</form>
+</body>
+</html>
